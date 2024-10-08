@@ -1,7 +1,11 @@
+import Navigation from "@/components/Navigation";
+
 export default function Home() {
   return (
     <main>
-      <section className="relative">Nav</section>
+      <section className="relative">
+        <Navigation />
+      </section>
 
       <section className="xl:padding-1 wide:padding-r padding-b">Hero</section>
 
