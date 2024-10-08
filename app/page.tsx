@@ -1,4 +1,5 @@
 import CustomerReviews from "@/components/CustomerReviews";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
 import PopularProducts from "@/components/PopularProducts";
@@ -32,10 +33,10 @@ export default function Home() {
       <section className="padding-x sm:py-32 py-16 w-full">
         <Subscribe />
       </section>
-      {/* 
-    <section className=' bg-black padding-x padding-t pb-8'>
-      <Footer />
-    </section> */}
+
+      <section className=" bg-black padding-x padding-t pb-8">
+        <Footer />
+      </section>
     </main>
   );
 }
