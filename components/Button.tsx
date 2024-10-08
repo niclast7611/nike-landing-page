@@ -8,6 +8,7 @@ type Props = {
   backgroundColor?: string;
   borderColor?: string;
   textColor?: string;
+  fullWidth?: boolean;
 };
 
 const Button = ({
@@ -16,6 +17,7 @@ const Button = ({
   backgroundColor = "bg-coral-red",
   borderColor = "border-coral-red",
   textColor = "text-white",
+  fullWidth,
 }: Props) => {
   return (
     <button
@@ -23,7 +25,8 @@ const Button = ({
         "flex justify-center items-center gap2 font-montserrat px-7 py-4 border text-lg leading-none  rounded-full ",
         backgroundColor,
         borderColor,
-        textColor
+        textColor,
+        fullWidth && "w-full"
       )}
     >
       {label}
