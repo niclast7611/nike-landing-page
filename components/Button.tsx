@@ -1,14 +1,31 @@
+import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 
 type Props = {
   label: string;
   iconUrl?: string;
+  backgroundColor?: string;
+  borderColor?: string;
+  textColor?: string;
 };
 
-const Button = ({ label, iconUrl }: Props) => {
+const Button = ({
+  label,
+  iconUrl,
+  backgroundColor = "bg-coral-red",
+  borderColor = "border-coral-red",
+  textColor = "text-white",
+}: Props) => {
   return (
-    <button className="flex justify-center items-center gap2 font-montserrat px-7 py-4 border text-lg leading-none bg-coral-red rounded-full text-white border-coral-red">
+    <button
+      className={clsx(
+        "flex justify-center items-center gap2 font-montserrat px-7 py-4 border text-lg leading-none  rounded-full ",
+        backgroundColor,
+        borderColor,
+        textColor
+      )}
+    >
       {label}
       {iconUrl && (
         <Image
