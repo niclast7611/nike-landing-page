@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
+import PopularProducts from "@/components/PopularProducts";
 
 export default function Home() {
   return (
@@ -8,9 +9,10 @@ export default function Home() {
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
-      {/* <section className='padding'>
-      <PopularProducts />
-    </section>
+      <section className="padding">
+        <PopularProducts />
+      </section>
+      {/* 
     <section className='padding'>
       <SuperQuality />
     </section>
