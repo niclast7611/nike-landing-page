@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
 import PopularProducts from "@/components/PopularProducts";
+import SuperQuality from "@/components/SuperQuality";
 
 export default function Home() {
   return (
@@ -12,10 +13,10 @@ export default function Home() {
       <section className="padding">
         <PopularProducts />
       </section>
+      <section className="padding">
+        <SuperQuality />
+      </section>
       {/* 
-    <section className='padding'>
-      <SuperQuality />
-    </section>
     <section className='padding-x py-10'>
       <Services />
     </section>
